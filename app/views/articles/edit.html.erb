@@ -1,5 +1,4 @@
-<h1>Create an Article</h1>
-
+<h1>edit existing article</h1>
 <% if @article.errors.any? %>
 <ul>
   <% @article.errors.full_messages.each do |msg| %>
@@ -20,5 +19,4 @@
   <%= f.submit %>
 </p>
 <% end %>
-
 <%= link_to "Back to articles", articles_path %>
